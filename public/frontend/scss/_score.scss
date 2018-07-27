@@ -1,0 +1,46 @@
+// Styling for the score section
+
+/*====================================================
+                        SCORE
+======================================================*/
+.score-detail {
+	.card {
+ 		.card-header {
+ 			border-radius:0;
+ 			background:$primary-col;
+ 			color:$white; 
+ 		}
+
+ 		.card-body {
+ 			padding:20px 0 0;
+				ul {
+					padding-left: 0;
+					padding-bottom: 20px;
+					li {
+						margin: 0 8px;
+						list-style: none;
+						display: inline-block;
+						font-weight: 700;
+						img {
+							height: 40px;
+							width:40px;
+						}
+
+						p {
+							font-size: 14px;
+							font-weight:normal;
+							margin-bottom: 0;
+						}
+
+						@media (min-width: 991px) and (max-width: 1200px) {
+							min-width:200px;
+							&:nth-child(2) {
+								margin:10px 0;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}

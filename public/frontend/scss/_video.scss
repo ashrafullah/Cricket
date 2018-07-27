@@ -1,0 +1,74 @@
+// Styling for the video section
+
+/*====================================================
+                        VIDEO
+======================================================*/
+
+.video {
+	.second-banner {
+		.second-banner-cont {
+			cursor: pointer;
+			position: relative;
+ 			color:$white;
+	 		.img-caption {
+	 			width:100%;
+	 			position: absolute;
+	 			padding-left:10px;
+	 			padding-bottom: 10px;
+	 			border-radius:5px;
+	 			bottom:0; 
+	 			background: linear-gradient(to top, rgba(216, 28, 0, 0.76), transparent);
+
+	 			p {
+	 				padding:0 5px;
+	 				background:rgba(0,0,0,0.5);
+	 				border-radius: 5%;
+	 				width:65px;
+	 				font-size: 13px;
+	 				line-height: 23px;
+	 				margin-bottom: 5px;
+	 			}
+
+	 			h5 { 
+	 				font-size:20px;
+	 				margin-bottom: 0;
+	 			}
+	 		}
+
+	 		@media (max-width:767px) {
+				img {
+					width:100%;
+					max-height:300px;
+				} 	 
+	 		}
+		}
+	}
+}
+
+  .modal-dialog {
+        max-width: 800px;
+
+        @media (min-width:575px) and (max-width:767px) {
+          margin:20% auto;
+        }
+
+        @media (max-width:575px) {
+          margin:30% 2%;
+        }
+  }
+
+  .modal-body {
+      position: relative;
+      padding: 0px;
+  }
+
+  .close {
+      position: absolute;
+      right: -30px;
+      top: 0;
+      z-index: 999;
+      font-size: 2rem;
+      font-weight: normal;
+      color: #fff;
+      opacity: 1;
+  }

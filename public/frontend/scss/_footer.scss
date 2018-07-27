@@ -1,0 +1,97 @@
+// Styling for the footer
+
+/*====================================================
+                      FOOTER
+======================================================*/
+ 
+  footer {
+    background-image:url('../img/footer-bg.jpg');
+    @include background-cover;
+    position: relative;
+    color:$white;
+
+    &::before{
+      background-color: rgba(0, 0, 0, 0.9);
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
+
+    .row {
+      padding: 100px 0 0;
+      
+      .border-bot {
+        width: 50px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid $primary-col;
+      }
+
+      ul {
+        padding-left: 0;
+        li {
+          list-style: none;
+          padding:4px 0;
+          a{
+            text-decoration: none;
+            color:$white;
+          }
+        }
+      }
+
+      .company-desc {
+        ul {
+          li {
+            display:inline-block;
+            margin:10px;
+            i {
+              border:1px solid #fff;
+              height:35px;
+              width:35px;
+              font-size:20px;
+              line-height: 35px;
+              text-align: center;
+              &.fa-facebook {
+                color:#3b5998;
+                border-color:#3b5998; 
+              }
+              &.fa-twitter {
+                color:#00aced;
+                border-color:#00aced; 
+              }
+              &.fa-google-plus {
+                color:#d34836;
+                border-color:#d34836; 
+              }
+            }
+
+          }
+        }
+      }
+
+      @media (min-width: 575px) and (max-width:767px) {
+        .col-md-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin-top: 50px;
+        } 
+      }
+    }
+
+  }
+
+  .footer-b {
+    position: relative;
+    background:$black;
+    padding:15px 0;
+    small{
+      color:$white;
+      font-size:14px;
+      a {
+        color:$primary-col;
+      }
+    }
+  } 
+  
+ 

@@ -1,0 +1,241 @@
+// Styling for the team section 
+
+/*====================================================
+                      TEAM
+======================================================*/
+
+ 
+.team {
+	.card { 
+
+		.card-header {
+			button {
+				font-size:20px;
+				color:$white;
+				text-decoration: none;
+
+				@media (max-width:575px) {
+					font-size:16px;
+					img {
+						max-height: 35px;
+					}
+				}
+
+				@media (max-width:360px) {
+					font-size:15px;
+					padding:0;
+					img {
+						max-height: 30px;
+					}	
+				}
+			}
+		}
+
+		.card-body {
+			padding-top: 0;
+		}
+
+	    .our-team {
+	        text-align: center;
+	        margin-top: 30px;
+
+		    .pic {
+		        position: relative;
+
+			    &:before {
+			        content: "";
+			        width: 100%;
+			        height: 100%;
+			        position: absolute;
+			        top: 0;
+			        left: 0;
+			        background: rgba($black, 0.55);
+			        opacity: 0;
+			        transition: all 0.3s ease 0s;
+			    }
+
+			    &:after {
+			        content: "";
+			        width: 90%;
+			        height: 90%;
+			        border: 1px solid $gray-100;
+			        position: absolute;
+			        top: 5%;
+			        left: 5%;
+			        opacity: 0;
+			        transition: all 0.3s ease 0s;
+			    }
+
+			    img {
+			        width: 100%;
+			        height: auto;
+			    }
+			} 
+
+		    .social-links {
+		        width: 100%;
+		        list-style: none;
+		        padding: 0;
+		        margin: 0;
+		        position: absolute;
+		        bottom: 40px;
+		        left: 0;
+		        opacity: 0;
+		        z-index: 1;
+		        transition: all 0.3s ease 0s;
+
+		        li {
+			        display: inline-block;
+			        margin-right: 10px;
+
+			        a {
+				        display: block;
+				        width: 50px;
+				        height: 50px;
+				        line-height: 50px;
+				        text-decoration:none;
+				        border-radius: 50%;
+				        font-size: 18px;
+				        color: $gray-100;
+				        border: 1px solid $gray-100;
+				        transition: all 0.3s ease 0s;
+				    }
+
+				    .fa-twitter:hover {
+				        background: #00aced;
+				        border-color: #00aced;
+				    }
+
+				    .fa-google-plus:hover {
+				        background: #c03c30;
+				        border-color: #c03c30;
+				    } 
+
+				    .fa-facebook:hover {
+				        background: #4867aa;
+				        border-color: #4867aa;
+				    }
+			    }
+		    }   
+
+		    .team-content {
+		        padding: 15px 0;
+		        background: $gray-400;
+		        border-top: 2px solid $primary-col;
+		        overflow: hidden;
+		        position: relative;
+		        &:before {
+			        content: "";
+			        width: 100%;
+			        height: 100%;
+			        background: $primary-col;
+			        position: absolute;
+			        top: -100%;
+			        left: 0;
+			        transition: all 0.3s ease-out 0s;
+			    } 
+		    } 
+
+		    .title {
+		        font-size: 20px;
+		        color: $primary-col;
+		        margin: 0 0 5px;
+		        text-transform: capitalize;
+		        z-index: 1;
+		        position: relative;
+		        transition: all 0.5s ease 0s;
+		    } 
+
+		    &:hover {
+		    	
+		    	.pic:before,
+		     	.pic:after {
+		        opacity: 1;
+				}
+
+			    .social-links {
+			        opacity: 1;
+			    }
+
+				.team-content:before {
+			        top: 0;
+			    }
+
+			    .title,
+			    .post {
+			        color: #fff;
+			    } 
+
+		    } 
+
+
+		    @media screen and (max-width: 990px) {
+		            margin-bottom: 20px;
+		    }
+
+		}
+
+		&.chennai {
+			border-color:yellow;
+			.card-header {
+				background:yellow;
+			}
+		}
+
+		&.delhi {
+			margin-top: 10px;
+			border-color:#ab0d0d;
+			.card-header {
+				background:#ab0d0d;
+			}
+		}
+
+		&.punjab {
+			margin-top: 10px;
+			border-color:#ff3636;
+			.card-header {
+				background:#ff3636;
+			}
+		}
+
+		&.kolkata {
+			margin-top: 10px;
+			border-color:#360f46;
+			.card-header {
+				background:#360f46;
+			}
+		}
+
+		&.mumbai {
+			margin-top: 10px;
+			border-color:#107ef5;
+			.card-header {
+				background:#107ef5;
+			}
+		}
+
+		&.rajasthan {
+			margin-top: 10px;
+			border-color:#004b9d;
+			.card-header {
+				background:#004b9d;
+			}
+		}
+
+		&.bangalore {
+			margin-top: 10px;
+			border-color:#ff452a;
+			.card-header {
+				background:#ff452a;
+			}
+		}
+
+		&.hyderabad {
+			margin-top: 10px;
+			border-color:#fb7f2a;
+			.card-header {
+				background:#fb7f2a;
+			}
+		}
+	}
+}
