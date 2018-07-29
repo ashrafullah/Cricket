@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/frontend/index', 'FrontendController@frontend')->name('frontend_index');
+Route::get('/frontend/register', 'RegisterController@register')->name('frontend_register');

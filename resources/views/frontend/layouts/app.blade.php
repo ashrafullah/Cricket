@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<!-- <html class="no-js" prefix="og: http://ogp.me/ns#"  lang="en-IN"> -->
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Cricket 2018 News</title>
+        <title>IPL 2018 News - Free Bootstrap Template</title>
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 
         <meta name="description" content="We craft awesome Bootstrap themes for free and share selected resources for web designer &amp; developer. Download Free HTML themes for Bootstrap" /> 
-        <link href="img/logo.png" rel="apple-touch-icon" sizes="96x96">
-        <link href="img/logo.png" rel="icon" sizes="96x96" type="image/png">
-        <link href="img/logo.png" rel="icon" sizes="32x32" type="image/png">
-        <meta content="img/logo_icon_96dp.png" name="msapplication-TileImage">
+        <link href="img/logo_icon_96dp.png" rel="apple-touch-icon" sizes="96x96">
+        <link href="img/logo_icon_96dp.png" rel="icon" sizes="96x96" type="image/png">
+        <link href="img/logo_icon_32dp.png" rel="icon" sizes="32x32" type="image/png">
+        <!-- <meta content="img/logo_icon_96dp.png" name="msapplication-TileImage">
         
         <meta property="og:url" content="https://www.boostraptheme.com/demo/index.html" />
         <meta property="og:title" content="Free Bootstrap Template" />
@@ -20,102 +19,23 @@
         <meta property="og:site_name" content="Boostraptheme" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="BoostrapTheme" />
-        <meta name="twitter:creator" content="BoostrapTheme" />
+        <meta name="twitter:creator" content="BoostrapTheme" /> -->
 
         <link rel='stylesheet' href="{{asset('frontend/font-awesome/css/font-awesome.min.css')}}">
         <link rel="stylesheet" href="{{asset('frontend/css/app.css')}}">
-
-       <!--  <link rel="stylesheet" href="{{asset('frontend/css/templatemo-style.css')}}">
-        <script src="{{asset('frontend/js/jquery.js')}}"></script> -->
 
     </head>
 
     <body>
 
-        <!-- TOPNAVBAR 
-            =================-->
-            <div class="topmenu">
-              <div class="container-fluid">
-                <div class="row"  id="page-top">
-                  <div class="col-md-6 col-sm-6"> 
-                     <div class="info">Cricket 2018 <i class="fa fa-long-arrow-right"></i>  07	April - 27 May</div>
-                  </div>   
-                  <div class="col-md-6 sec col-sm-6">  
-                  	<div class="social"> 
-                  		<ul>
-                  			<li>Social Corner </li>
-                  			<li><a href="#"><i class="fa fa-facebook"></a></i></li>
-                  			<li><a href="#"><i class="fa fa-twitter"></a></i></li>
-                  			<li><a href="#"><i class="fa fa-google-plus"></a></i></li>
-                  		</ul>
-                  	</div> 
-                  </div>
-                </div>
-              </div>
-            </div>  
-        
-        <!-- NAVBAR 
-            =================-->
-            <nav class="navbar navbar-expand-lg navbar-light" id="mainNav" data-toggle="affix">
-              <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/logo.png" alt="" class="img-fluid"></a>
-                <button class="navbar-toggler navbar-toggler-center  ml-auto py-3 my-1 " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                  Menu
-                  <i class="fa fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                  <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="score.html">Score</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="news.html">News</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="video.html">Video</a>
-                    </li>  
-                    <li class="nav-item">
-                      <a class="nav-link" href="team.html">Teams</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="photo.html">Photo</a>
-                    </li> 
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Language
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">English</a>
-                        <a class="dropdown-item" href="#">বাংলা</a>
-                        <!-- <a class="dropdown-item" href="#">தமிழ்</a>
-                        <a class="dropdown-item" href="#">తెల్గు</a> -->
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="login.html">Login</a>
-                    </li> 
-                     <li class="nav-item">
-                      <a class="nav-link" href="register.html">Register</a>
-                    </li> 
-                  </ul>
-                </div>
-              </div>
-            </nav>
+
+             
+    
+   @yield('content')         
+     
 
 
-
-
-
-            
-            @yield('content')
-
-
-
-
-            <!-- FOOTER 
+    <!-- FOOTER 
             =================-->
             <footer class="footer">
               <div class="container">
